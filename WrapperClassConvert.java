@@ -1,32 +1,26 @@
 package assignmen_3;
 
+
 public class WrapperClassConvert {
+
 	public static void main(String[] args) {
-
-		int a = 10;// primitive data type
-		// convertToWrapper(a);)
-		System.out.println("After converting into wrapper object: " + convertToWrapper(a));
-	}
-
-	public static Object convertToWrapper(Object value) {
-
-		Class valueClass = value.getClass();
-
-		if (value == null || valueClass.isPrimitive()) {
-			System.out.println("Give proper primitive as input");
-		}
-
-		Integer aObj = Integer.valueOf((int) value);
-
 		
-if (aObj instanceof Integer) {
-			return aObj;
-		} else {
-			System.out.println("Give proper primitive as input");
-		}
 
-		return aObj;
+			    
+			    int a = 10;
+
+			    convertToWrapper(a);
+			    
 
 	}
 
-}
+	private static void convertToWrapper(int a) {
+		Integer aObj = Integer.valueOf(a);
+
+	    if(aObj instanceof Integer) {
+	      System.out.println(aObj);
+	    }
+		
+	}
+
+	}
